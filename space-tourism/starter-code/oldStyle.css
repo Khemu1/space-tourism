@@ -1,0 +1,122 @@
+.FF {
+	color: #ffffff;
+}
+
+.DD {
+	color: #d0d6f9;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:is(html, body) {
+	height: 100%;
+	font-family: "Bellefair", serif;
+}
+
+.home {
+	width: 100%;
+	height: 100%;
+	background-image: url("assets/home/background-home-desktop.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	/* overflow-x: hidden; */
+}
+
+nav {
+	display: grid;
+	grid-template-columns: auto 1fr 1fr;
+	align-items: center;
+	/* overflow: hidden; */
+}
+
+nav img {
+	margin: 40px 0 40px 30px;
+}
+
+nav > span {
+	z-index: 100;
+	position: relative;
+	left: 30px;
+	height: 3px;
+	align-self: center;
+	border-bottom: 2px #ffffff81 solid;
+	border-radius: 1px;
+}
+
+nav ul {
+	background-color: hsl(0 0% 100% / 0.1);
+	backdrop-filter: blur(1rem);
+	display: flex;
+	align-items: center;
+	list-style: none;
+	width: clamp(800px, 40%, 60vw);
+	height: 30px;
+	padding: 40px 40px;
+}
+
+nav li {
+	padding: 31px 20px;
+}
+
+nav li span {
+	font-weight: bold;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	/* width: 100; */
+	flex: 1 1 auto;
+	margin: 100px 150px;
+}
+
+.explore {
+	background-color: #ffffff;
+	width: 274px;
+	height: 274px;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 32px;
+	text-transform: uppercase;
+	flex-shrink: 0;
+}
+
+.text > div:first-child {
+	font-size: 28px;
+	font-family: "Barlow Condensed", sans-serif;
+	letter-spacing: 4.75px;
+	text-transform: uppercase;
+	color: #d0d6f9;
+}
+
+.text {
+	margin-right: auto;
+	width: 450px;
+	font-size: 18px;
+	color: #d0d6f9;
+}
+
+.text div:last-child {
+	font-family: "Barlow Condensed", sans-serif;
+	font-size: 18px;
+	line-height: 1.6em;
+	letter-spacing: 1px;
+}
+
+.planet {
+	font-size: 150px;
+	text-transform: uppercase;
+	text-align: center;
+	height: 150px;
+	margin-block: 30px;
+}

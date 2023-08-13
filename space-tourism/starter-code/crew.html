@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+		<link rel="stylesheet" href="Style.css" />
+		<script src="script.js" defer></script>
+		<title>Frontend Mentor | Space tourism website</title>
+	</head>
+	<body>
+		<div class="bg destinations">
+			<nav>
+				<img src="assets/shared/logo.svg" alt="" />
+				<span></span>
+				<ul class="FF">
+					<li>
+						<a href="index.html"><span aria-hidden="true">00</span> Home</a>
+					</li>
+					<li>
+						<a href="destinations.html"><span aria-hidden="true">01</span> Destination</a>
+					</li>
+					<li class="selected">
+						<a href="crew.html"><span aria-hidden="true">02</span> Crew</a>
+					</li>
+					<li>
+						<a href="technologies.html"><span aria-hidden="true">03</span> Technology</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="content">
+				<div class="ask-dest"><span>02</span> Meet your crew</div>
+				<div class="crew">
+					<div class="crew-info">
+						<div class="role FF">Commander</div>
+						<div class="name FF">Douglas Hurley</div>
+						<div class="crew-ov DD">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.crew-info</div>
+						<div class="crews"><span class="selected-crew" data-crew="0"></span><span data-crew="1"></span><span data-crew="2"></span><span data-crew="3"></span></div>
+					</div>
+					<div id="crew"><img src="assets/crew/image-douglas-hurley.png" alt="" /></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
